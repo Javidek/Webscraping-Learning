@@ -1,0 +1,7 @@
+beautifulsoup4
+bs4
+mysql-connector
+requests
+scikit-learn
+sklearn
+
