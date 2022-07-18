@@ -9,11 +9,9 @@ input_car=input('please enter name car and Model (ex:BMW X3) for predict price:'
 input_miles=input('please enter miles this car:')
 input_Product=input('please enter Product years:')
 input_accident=input('please enter several times accident this car :')
-################################# Phase One:Web scraping and saving 300 page info in  DataBase ###############
 mydb=Create_db()
 webscarping(mydb)
 print('It is based on price predict miles,Product year and accident also complete machine information stored in Info_car table into Car database')
-#################Phase Two : Select from database for Predict ######################################
 x=[]
 y=[]
 query='select Model,Miles,Product_c,Accident,Price from Info_car where Name = "%s";'% input_car[0]
